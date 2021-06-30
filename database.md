@@ -2,15 +2,15 @@
 
 VENDITA AUTO USATE
 
-- id                            BIGINT            
-- marca                         VARCHAR(30)     
-- modello                       VARCHAR(30)    
-- anno_di_immatricolazione      YEAR          
-- kilometri                     DOUBLE(6,3)   
-- prezzo                        DOUBLE(6,3)    
-- targa                         VAR(7)          
-- colore                        VARCHAR(20)                        
-- alimentazione                 VARCHAR(20)    
-- cambio                        VARCHAR(20)     
-- porte                         TINYINT          
-- interni                       VARCHAR(20)                     
+- id                            BIGINT              NOTNULL / PRIMARY KEY
+- marca                         VARCHAR(30)         NOTNULL
+- modello                       VARCHAR(30)         NOTNULL
+- anno_di_immatricolazione      YEAR                NULL
+- kilometri                     DOUBLE(9,3)         NOTNULL
+- prezzo                        DOUBLE(6,3)         NOTNULL
+- targa                         VAR(7)              NULL
+- colore                        VARCHAR(20)         NOTNULL                   
+- alimentazione                 VARCHAR(15)         NOTNULL
+- cambio                        VARCHAR(15)         NOTNULL
+- porte                         TINYINT             NOTNULL
+- interni                       VARCHAR(20)         NULL                
